@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
 
+import { Provider } from 'react-redux';
+import store from './app/store';
 import 'antd/dist/antd.css';
 
 ReactDOM.render(
@@ -12,7 +14,9 @@ ReactDOM.render(
     <Router>
 
       <React.StrictMode>
-        <App />
+        <Provider store={store}>
+          <App />
+        </Provider>
       </React.StrictMode>
       
     </Router>,

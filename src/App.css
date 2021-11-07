@@ -305,6 +305,14 @@ a:hover {
   width: 100px;
   height: 100px;
 }
+
+.news-image-container img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
 .news-card p {
   color: black;
   margin: 10px 0px !important;
@@ -315,6 +323,10 @@ a:hover {
 }
 .provider-name {
   margin-left: 10px;
+}
+
+.provider-date {
+  font-size: 11px;
 }
 
 .chart-header {
