@@ -52,19 +52,25 @@ a:hover {
   width: 100%;
 }
 .logo {
-  margin: 0 0 0 15px;
+  margin: 11px 0 0 15px;
 }
 .logo a {
   color: white;
 }
+
+.logo-container > img {
+  width: 50px;
+}
+
 .menu-control-container {
   display: none !important;
   position: absolute !important;
   right: 10px !important;
-  top: 25px !important;
+  top: 30px !important;
   font-size: 1.2rem !important;
   background-color: var(--bgSecondary) !important;
   border: none !important;
+  color: var(--blue) !important;
 }
 
 .loader {
