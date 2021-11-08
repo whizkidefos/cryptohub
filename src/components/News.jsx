@@ -1,5 +1,4 @@
 import { useState } from "react";
-import millify from "millify";
 import { Select, Typography, Row, Col, Avatar, Card } from 'antd';
 import moment from 'moment';
 
