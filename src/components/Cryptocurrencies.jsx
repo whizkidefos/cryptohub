@@ -9,8 +9,8 @@ import Loader from './Loader';
 
 function Cryptocurrencies({ simplified }) {
     const count = simplified ? 10 : 100;
-    const {data: cryptosList, isFetching} = useGetCryptosQuery(count);
-    const [cryptos, setCryptos] = useState(cryptosList?.data?.coins); 
+    const { data: cryptosList, isFetching } = useGetCryptosQuery(count);
+    const [cryptos, setCryptos] = useState(cryptosList?.data?.coins);
     const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
@@ -35,14 +35,14 @@ function Cryptocurrencies({ simplified }) {
                 {cryptos?.map((currency) => (
                     <Col xs={24} sm={12} lg={6} className="crypto-card" key={currency.id}>
                         <Link to={`/crypto/${currency.id}`}>
-                            <Card 
+                            <Card
                                 title={`${currency.rank}. ${currency.name}`}
-                                extra={<img className="crypto-image" src={currency.iconUrl} alt="crypto image" />}
+                                extra={<img className="crypto-image" src={currency.iconUrl} alt="crypto icon" />}
                                 hoverable
-                                >
-                                    <p>Price: ${millify(currency.price)}</p>
-                                    <p>Market Cap: ${millify(currency.marketCap)}</p>
-                                    <p>Daily Change: {millify(currency.change)}%</p>
+                            >
+                                <p>Price: ${millify(currency.price)}</p>
+                                <p>Market Cap: ${millify(currency.marketCap)}</p>
+                                <p>Daily Change: {millify(currency.change)}%</p>
                             </Card>
                         </Link>
                     </Col>
