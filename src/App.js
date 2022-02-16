@@ -39,9 +39,9 @@ function App() {
             </Switch>
           </div>
         </Layout>
-      
+
       <footer className='footer'>
-        <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>Copyright © 2021
+        <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>Copyright © 2021 - 2022
           <Link to="/">
             Cryptohub Inc.
           </Link> <br />
